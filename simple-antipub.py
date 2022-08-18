@@ -6,7 +6,7 @@ filename = './antipub.txt'
 
 create_file = open(filename, "a")
 
-def blocks(files, size=65536):
+def blocks(files, size=65536) -> str:
     while True:
         b = files.read(size)
         if not b: break
